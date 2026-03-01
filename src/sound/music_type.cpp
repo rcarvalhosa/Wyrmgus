@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<music_type>;
-
 template <>
 const std::string enum_converter<music_type>::property_class_identifier = "wyrmgus::music_type";
 
@@ -48,5 +46,7 @@ const std::map<std::string, music_type> enum_converter<music_type>::string_to_en
 
 template <>
 const bool enum_converter<music_type>::initialized = enum_converter::initialize();
+
+template class enum_converter<music_type>;
 
 }

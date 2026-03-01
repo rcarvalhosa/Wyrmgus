@@ -70,6 +70,7 @@
 #include "unit/historical_unit.h"
 #include "unit/unit.h"
 #include "unit/unit_class.h"
+#include "unit/unit_type.h"
 #include "util/exception_util.h"
 #include "util/log_util.h"
 #include "util/point_util.h"

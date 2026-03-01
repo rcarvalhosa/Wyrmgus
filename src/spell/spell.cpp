@@ -60,6 +60,7 @@
 #include "spell/status_effect.h"
 #include "unit/unit.h"
 #include "unit/unit_find.h"
+#include "unit/unit_type.h"
 #include "upgrade/upgrade.h"
 #include "util/assert_util.h"
 #include "util/string_conversion_util.h"

@@ -33,6 +33,7 @@
 #include "script.h"
 #include "unit/unit_manager.h"
 #include "unit/unit.h"
+#include "unit/unit_type.h"
 #include "util/assert_util.h"
 #include "util/exception_util.h"
 #include "util/list_util.h"

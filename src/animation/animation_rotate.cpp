@@ -32,6 +32,7 @@
 
 #include "actions.h"
 #include "unit/unit.h"
+#include "unit/unit_type.h"
 #include "util/assert_util.h"
 
 /**

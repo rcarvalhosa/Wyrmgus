@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<objective_type>;
-
 template <>
 const std::string enum_converter<objective_type>::property_class_identifier = "wyrmgus::objective_type";
 
@@ -54,5 +52,7 @@ const std::map<std::string, objective_type> enum_converter<objective_type>::stri
 
 template <>
 const bool enum_converter<objective_type>::initialized = enum_converter::initialize();
+
+template class enum_converter<objective_type>;
 
 }

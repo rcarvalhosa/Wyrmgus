@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<cursor_type>;
-
 template <>
 const std::string enum_converter<cursor_type>::property_class_identifier = "wyrmgus::cursor_type";
 
@@ -56,5 +54,7 @@ const std::map<std::string, cursor_type> enum_converter<cursor_type>::string_to_
 
 template <>
 const bool enum_converter<cursor_type>::initialized = enum_converter::initialize();
+
+template class enum_converter<cursor_type>;
 
 }

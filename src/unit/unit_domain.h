@@ -41,6 +41,4 @@ enum class unit_domain {
 
 }
 
-extern template class archimedes::enum_converter<unit_domain>;
-
 Q_DECLARE_METATYPE(wyrmgus::unit_domain)

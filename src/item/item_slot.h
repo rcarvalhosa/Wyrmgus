@@ -48,6 +48,4 @@ enum class item_slot {
 
 }
 
-extern template class archimedes::enum_converter<item_slot>;
-
 Q_DECLARE_METATYPE(wyrmgus::item_slot)

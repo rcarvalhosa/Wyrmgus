@@ -51,6 +51,7 @@
 #include "unit/unit_ref.h"
 #include "unit/unit_type.h"
 #include "upgrade/upgrade_modifier.h"
+#include "upgrade/upgrade_structs.h"
 #include "util/vector_util.h"
 
 class _EnemyOnMapTile final

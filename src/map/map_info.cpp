@@ -29,6 +29,7 @@
 
 #include "map/map_info.h"
 
+#include "database/database.h"
 #include "map/map_layer.h"
 #include "map/map_presets.h"
 #include "map/map_settings.h"

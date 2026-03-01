@@ -71,6 +71,4 @@ inline bool can_government_type_have_dynasty(const government_type government_ty
 
 }
 
-extern template class archimedes::enum_converter<government_type>;
-
 Q_DECLARE_METATYPE(wyrmgus::government_type)

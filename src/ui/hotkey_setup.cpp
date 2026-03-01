@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<hotkey_setup>;
-
 template <>
 const std::string enum_converter<hotkey_setup>::property_class_identifier = "wyrmgus::hotkey_setup";
 
@@ -44,5 +42,7 @@ const std::map<std::string, hotkey_setup> enum_converter<hotkey_setup>::string_t
 
 template <>
 const bool enum_converter<hotkey_setup>::initialized = enum_converter::initialize();
+
+template class enum_converter<hotkey_setup>;
 
 }

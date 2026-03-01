@@ -28,11 +28,11 @@
 
 #include "script/context.h"
 #include "unit/unit.h"
+#include "upgrade/upgrade_structs.h"
 
 class CConfigData;
 class CPlayer;
 class CUnit;
-class CUpgrade;
 
 namespace archimedes {
 	class gsml_data;

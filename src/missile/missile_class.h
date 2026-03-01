@@ -56,6 +56,4 @@ enum class missile_class {
 
 }
 
-extern template class archimedes::enum_converter<missile_class>;
-
 Q_DECLARE_METATYPE(wyrmgus::missile_class)

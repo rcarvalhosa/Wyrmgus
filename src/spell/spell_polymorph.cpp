@@ -47,6 +47,7 @@
 //Wyrmgus start
 #include "unit/unit_find.h"
 //Wyrmgus end
+#include "unit/unit_type.h"
 #include "util/vector_util.h"
 
 void Spell_Polymorph::Parse(lua_State *l, int startIndex, int endIndex)

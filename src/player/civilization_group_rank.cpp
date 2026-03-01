@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<civilization_group_rank>;
-
 template <>
 const std::string enum_converter<civilization_group_rank>::property_class_identifier = "wyrmgus::civilization_group_rank";
 
@@ -44,5 +42,7 @@ const std::map<std::string, civilization_group_rank> enum_converter<civilization
 
 template <>
 const bool enum_converter<civilization_group_rank>::initialized = enum_converter::initialize();
+
+template class enum_converter<civilization_group_rank>;
 
 }

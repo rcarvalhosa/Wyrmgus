@@ -62,6 +62,4 @@ inline std::string get_difficulty_name(const difficulty difficulty)
 
 }
 
-extern template class archimedes::enum_converter<difficulty>;
-
 Q_DECLARE_METATYPE(wyrmgus::difficulty)

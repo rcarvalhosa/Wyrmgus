@@ -82,6 +82,8 @@
 #include <QQuickWindow>
 #pragma warning(pop)
 
+#include <cstdlib>
+
 static QCoro::Task<void> start_stratagus(const int argc, char **argv)
 {
 	try {
@@ -204,7 +206,7 @@ int main(int argc, char **argv)
 
 		stratagus_on_exit_cleanup();
 
-		return result;
+		std::_Exit(result);
 	} catch (...) {
 		exception::report(std::current_exception());
 		return -1;

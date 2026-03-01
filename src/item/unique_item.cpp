@@ -35,6 +35,7 @@
 #include "ui/interface.h"
 #include "unit/unit.h"
 #include "unit/unit_manager.h"
+#include "unit/unit_type.h"
 #include "upgrade/upgrade.h"
 #include "upgrade/upgrade_modifier.h"
 #include "upgrade/upgrade_structs.h"

@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<unit_domain>;
-
 template <>
 const std::string enum_converter<unit_domain>::property_class_identifier = "wyrmgus::unit_domain";
 
@@ -46,5 +44,7 @@ const std::map<std::string, unit_domain> enum_converter<unit_domain>::string_to_
 
 template <>
 const bool enum_converter<unit_domain>::initialized = enum_converter::initialize();
+
+template class enum_converter<unit_domain>;
 
 }

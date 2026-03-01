@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<geological_era>;
-
 template <>
 const std::string enum_converter<geological_era>::property_class_identifier = "wyrmgus::geological_era";
 
@@ -55,5 +53,7 @@ const std::map<std::string, geological_era> enum_converter<geological_era>::stri
 
 template <>
 const bool enum_converter<geological_era>::initialized = enum_converter::initialize();
+
+template class enum_converter<geological_era>;
 
 }

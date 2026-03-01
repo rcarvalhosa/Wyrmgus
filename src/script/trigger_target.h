@@ -38,6 +38,4 @@ enum class trigger_target {
 
 }
 
-extern template class archimedes::enum_converter<trigger_target>;
-
 Q_DECLARE_METATYPE(wyrmgus::trigger_target)

@@ -45,6 +45,7 @@
 #include "economy/resource.h"
 #include "editor.h"
 #include "engine_interface.h"
+#include "game/player_results_info.h"
 #include "game/results_info.h"
 //Wyrmgus start
 #include "grand_strategy.h"

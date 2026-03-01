@@ -42,6 +42,4 @@ enum class music_type {
 
 }
 
-extern template class archimedes::enum_converter<music_type>;
-
 Q_DECLARE_METATYPE(wyrmgus::music_type)

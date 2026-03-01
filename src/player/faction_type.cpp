@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<faction_type>;
-
 template <>
 const std::string enum_converter<faction_type>::property_class_identifier = "wyrmgus::faction_type";
 
@@ -49,5 +47,7 @@ const std::map<std::string, faction_type> enum_converter<faction_type>::string_t
 
 template <>
 const bool enum_converter<faction_type>::initialized = enum_converter::initialize();
+
+template class enum_converter<faction_type>;
 
 }

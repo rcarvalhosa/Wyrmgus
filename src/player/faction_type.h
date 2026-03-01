@@ -86,6 +86,4 @@ inline std::string get_faction_type_name(const faction_type type)
 
 }
 
-extern template class archimedes::enum_converter<faction_type>;
-
 Q_DECLARE_METATYPE(wyrmgus::faction_type)

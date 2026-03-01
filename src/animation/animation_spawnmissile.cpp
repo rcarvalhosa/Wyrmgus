@@ -40,6 +40,7 @@
 #include "missile.h"
 #include "pathfinder/pathfinder.h"
 #include "unit/unit.h"
+#include "unit/unit_type.h"
 #include "util/assert_util.h"
 
 void CAnimation_SpawnMissile::Action(CUnit &unit, int &/*move*/, int /*scale*/) const

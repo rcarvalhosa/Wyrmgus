@@ -77,14 +77,18 @@ QSizeF renderer::get_target_sizef() const
 
 void renderer::init_opengl()
 {
-	this->paint_device = std::make_unique<QOpenGLPaintDevice>(this->get_target_size());
-	this->paint_device->setPaintFlipped(true);
-	this->painter = std::make_unique<QPainter>(this->paint_device.get());
-
+	const QSize fbo_physical_size = this->framebufferObject()->size();
 	const QSizeF target_sizef = this->get_target_sizef();
 	const QSize target_size = target_sizef.toSize();
 
-	glViewport(0, 0, static_cast<GLsizei>(target_size.width()), static_cast<GLsizei>(target_size.height()));
+	this->paint_device = std::make_unique<QOpenGLPaintDevice>(fbo_physical_size);
+	this->paint_device->setPaintFlipped(true);
+	if (target_size.width() > 0) {
+		this->paint_device->setDevicePixelRatio(static_cast<qreal>(fbo_physical_size.width()) / target_size.width());
+	}
+	this->painter = std::make_unique<QPainter>(this->paint_device.get());
+
+	glViewport(0, 0, static_cast<GLsizei>(fbo_physical_size.width()), static_cast<GLsizei>(fbo_physical_size.height()));
 
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();

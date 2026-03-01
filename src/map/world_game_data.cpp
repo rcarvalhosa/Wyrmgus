@@ -42,6 +42,7 @@
 #include "ui/ui.h"
 #include "unit/unit.h"
 #include "unit/unit_find.h"
+#include "unit/unit_type.h"
 
 namespace wyrmgus {
 

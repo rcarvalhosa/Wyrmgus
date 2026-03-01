@@ -34,6 +34,7 @@
 #include "species/geological_era.h"
 #include "species/taxon.h"
 #include "species/taxonomic_rank.h"
+#include "unit/unit_type.h"
 #include "util/vector_random_util.h"
 #include "util/vector_util.h"
 

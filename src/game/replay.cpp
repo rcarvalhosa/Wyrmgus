@@ -56,6 +56,8 @@
 #include "unit/unit.h"
 #include "unit/unit_manager.h"
 #include "unit/unit_type.h"
+#include "upgrade/upgrade_structs.h"
+#include "economy/resource.h"
 #include "util/assert_util.h"
 #include "util/path_util.h"
 #include "util/random.h"

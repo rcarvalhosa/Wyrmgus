@@ -174,6 +174,4 @@ inline std::string get_item_class_name(const item_class item_class)
 
 }
 
-extern template class archimedes::enum_converter<item_class>;
-
 Q_DECLARE_METATYPE(wyrmgus::item_class)

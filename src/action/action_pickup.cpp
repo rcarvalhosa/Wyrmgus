@@ -38,6 +38,7 @@
 #include "database/preferences.h"
 #include "game/game.h"
 #include "iolib.h"
+#include "item/item_class.h"
 #include "item/persistent_item.h"
 #include "luacallback.h"
 #include "map/map_layer.h"

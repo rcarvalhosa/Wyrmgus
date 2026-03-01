@@ -27,7 +27,11 @@
 #pragma once
 
 #pragma warning(push, 0)
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#else
 #include <GL/gl.h>
+#endif
 #include <QOpenGLTexture>
 #include <QOpenGLTextureBlitter>
 #pragma warning(pop)

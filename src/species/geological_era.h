@@ -49,6 +49,4 @@ enum class geological_era {
 
 }
 
-extern template class archimedes::enum_converter<geological_era>;
-
 Q_DECLARE_METATYPE(wyrmgus::geological_era)

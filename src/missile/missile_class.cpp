@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<missile_class>;
-
 template <>
 const std::string enum_converter<missile_class>::property_class_identifier = "wyrmgus::missile_class";
 
@@ -59,5 +57,7 @@ const std::map<std::string, missile_class> enum_converter<missile_class>::string
 
 template <>
 const bool enum_converter<missile_class>::initialized = enum_converter::initialize();
+
+template class enum_converter<missile_class>;
 
 }

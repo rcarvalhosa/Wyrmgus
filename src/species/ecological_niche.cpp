@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<ecological_niche>;
-
 template <>
 const std::string enum_converter<ecological_niche>::property_class_identifier = "wyrmgus::ecological_niche";
 
@@ -45,5 +43,7 @@ const std::map<std::string, ecological_niche> enum_converter<ecological_niche>::
 
 template <>
 const bool enum_converter<ecological_niche>::initialized = enum_converter::initialize();
+
+template class enum_converter<ecological_niche>;
 
 }

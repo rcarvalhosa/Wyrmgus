@@ -102,6 +102,7 @@
 #include "translator.h"
 #include "ui/button.h"
 #include "ui/interface.h"
+#include "unit/unit_type.h"
 #include "upgrade/upgrade_modifier.h"
 #include "util/string_util.h"
 #include "util/vector_util.h"

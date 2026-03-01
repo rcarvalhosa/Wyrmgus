@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<item_slot>;
-
 template <>
 const std::string enum_converter<item_slot>::property_class_identifier = "wyrmgus::item_slot";
 
@@ -51,5 +49,7 @@ const std::map<std::string, item_slot> enum_converter<item_slot>::string_to_enum
 
 template <>
 const bool enum_converter<item_slot>::initialized = enum_converter::initialize();
+
+template class enum_converter<item_slot>;
 
 }

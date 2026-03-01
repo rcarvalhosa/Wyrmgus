@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<trigger_type>;
-
 template <>
 const std::string enum_converter<trigger_type>::property_class_identifier = "wyrmgus::trigger_type";
 
@@ -44,5 +42,7 @@ const std::map<std::string, trigger_type> enum_converter<trigger_type>::string_t
 
 template <>
 const bool enum_converter<trigger_type>::initialized = enum_converter::initialize();
+
+template class enum_converter<trigger_type>;
 
 }

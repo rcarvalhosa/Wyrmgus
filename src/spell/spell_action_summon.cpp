@@ -39,6 +39,7 @@
 #include "spell/spell.h"
 #include "unit/unit.h"
 #include "unit/unit_find.h"
+#include "unit/unit_type.h"
 #include "util/string_conversion_util.h"
 
 namespace wyrmgus {

@@ -52,6 +52,4 @@ enum class cursor_type {
 
 }
 
-extern template class archimedes::enum_converter<cursor_type>;
-
 Q_DECLARE_METATYPE(wyrmgus::cursor_type)

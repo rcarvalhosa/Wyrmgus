@@ -60,6 +60,7 @@
 #include "ui/icon.h"
 #include "unit/unit.h"
 #include "unit/unit_class.h"
+#include "unit/unit_type.h"
 #include "unit/unit_type_variation.h"
 #include "unit/variation_tag.h"
 #include "upgrade/upgrade.h"

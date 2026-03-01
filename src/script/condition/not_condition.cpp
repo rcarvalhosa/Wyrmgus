@@ -43,10 +43,10 @@ not_condition<scope_type>::not_condition(std::vector<std::unique_ptr<const condi
 }
 
 template <typename scope_type>
-not_condition<scope_type>::not_condition(std::unique_ptr<const condition<scope_type>> &&condition)
+not_condition<scope_type>::not_condition(std::unique_ptr<const condition<scope_type>> &&condition_ptr)
 	: condition<scope_type>(gsml_operator::assignment)
 {
-	this->conditions.push_back(std::move(condition));
+	this->conditions.push_back(std::move(condition_ptr));
 }
 
 template class not_condition<CPlayer>;

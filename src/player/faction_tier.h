@@ -74,6 +74,4 @@ inline std::string get_faction_tier_name(const faction_tier tier)
 
 }
 
-extern template class archimedes::enum_converter<faction_tier>;
-
 Q_DECLARE_METATYPE(wyrmgus::faction_tier)

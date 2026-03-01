@@ -56,6 +56,4 @@ inline std::string get_hotkey_setup_name(const hotkey_setup hotkey_setup)
 
 }
 
-extern template class archimedes::enum_converter<hotkey_setup>;
-
 Q_DECLARE_METATYPE(wyrmgus::hotkey_setup)

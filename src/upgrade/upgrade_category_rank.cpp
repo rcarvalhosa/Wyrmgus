@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<upgrade_category_rank>;
-
 template <>
 const std::string enum_converter<upgrade_category_rank>::property_class_identifier = "wyrmgus::upgrade_category_rank";
 
@@ -44,5 +42,7 @@ const std::map<std::string, upgrade_category_rank> enum_converter<upgrade_catego
 
 template <>
 const bool enum_converter<upgrade_category_rank>::initialized = enum_converter::initialize();
+
+template class enum_converter<upgrade_category_rank>;
 
 }

@@ -34,6 +34,7 @@
 #include "player/player.h"
 #include "script.h"
 #include "unit/unit.h"
+#include "unit/unit_type.h"
 
 void Spell_SpawnPortal::Parse(lua_State *l, int startIndex, int endIndex)
 {

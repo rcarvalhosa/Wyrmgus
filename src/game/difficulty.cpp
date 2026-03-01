@@ -30,8 +30,6 @@
 
 namespace archimedes {
 
-template class enum_converter<difficulty>;
-
 template <>
 const std::string enum_converter<difficulty>::property_class_identifier = "wyrmgus::difficulty";
 
@@ -45,5 +43,7 @@ const std::map<std::string, difficulty> enum_converter<difficulty>::string_to_en
 
 template <>
 const bool enum_converter<difficulty>::initialized = enum_converter::initialize();
+
+template class enum_converter<difficulty>;
 
 }
