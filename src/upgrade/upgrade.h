@@ -29,10 +29,9 @@
 
 #pragma once
 
-#include "upgrade/upgrade_structs.h"
-
 class CFile;
 class CPlayer;
+class CUpgrade;
 class CUnit;
 
 namespace wyrmgus {
